@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pagina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Steven Herrera</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/mi-foto.png" alt="">
+            </div>
+            <h1>STEVEN HERRERA </h1>
+            <h2>programador full stack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/stevenHerrerablog/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/steve_musict/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2></h2>
+            <p><span>Hola, soy steven herrera, estudiante de programacion full stack y con otros estudios en el area de desarrollo web.
+            <div class="fila">
+               
+                <!-- intereses -->
+                <div class="col">
+                    <h3></h3>
+                    <div class="contenedor-intereses">
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <a href="https://docs.google.com/document/d/1VWNJ9Qq5XeI1X-aBDfLQjQbc7puRh4VyXQXNhBFOa7c/edit?usp=drive_link" download class ="fa-solid fa-download">
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>programacion full stack</h4>
+                        <span class="casa">universidad distrital</span>
+                        <span class="fecha">2023</span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>TECNOLOGO DESARROLLO MULTIMEDIA Y WEB</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2023 </span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>DIPLOMADO FUNDAMENTOS DE PROGRAMACION EN PYTHON</h4>
+                        <span class="casa">universidad tecnologica de pereira</span>
+                        <span class="fecha"></span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>                  </h3>
+                    <div class="item der">
+                        <h4>habilidades de programación con énfasis en Desarrollo Web</h4>
+                        <span class="casa">universidad tecnologica de pereira</span>
+                        <span class="fecha">2005 - 2008</span>
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diplomado en desarrollo de sofware</h4>
+                        <span class="casa">Universidad tecnologica de pereira</span>
+                        <span class="fecha">2005 - 2008</span>
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diplomado en Programación Básica en Java</h4>
+                        <span class="casa">Universidad tecnologica de pereira</span>
+                        <span class="fecha">2005 - 2008</span>
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="imagenes/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño UI</h3>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño UX</h3>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de sofware</h3>
+                       
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>proyecto 1</h3>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 2</h3>
+                        
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyecto 3</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="telefóno">
+                    <input type="text" placeholder="correo">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <UL>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d63624.298595467!2d-74.10088093302079!3d4.679527699999999!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1685721358239!5m2!1ses-419!2sco" width="600" height="550" style="border: 0;px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </UL>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/stevenHerrerablog/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
